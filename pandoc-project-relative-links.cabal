@@ -1,0 +1,59 @@
+name: pandoc-project-relative-links
+
+-- https://wiki.haskell.org/Package_versioning_policy
+-- PVP summary:      +-+------- breaking API changes
+--                   | | +----- non-breaking API additions
+--                   | | | +--- code changes with no API change
+version:             0.1.0.0
+                     
+synopsis: Pandoc filter for project-relative links
+description:
+  This pandoc filter turns links looking like absolute paths into
+  links relative to the root directory of the project.
+category: Text
+  
+homepage: https://github.com/musteresel/pandoc-project-relative-links
+bug-reports: https://github.com/musteresel/pandoc-project-relative-links/issues
+
+license: MIT
+license-file: LICENSE
+author: Daniel Jour
+maintainer: musteresel@gmail.com
+
+build-type: Simple
+extra-source-files: CHANGELOG.md, README.md
+cabal-version: >=1.10
+
+library
+  exposed-modules: PandocProjectRelativeLinks
+  build-depends: base ==4.*
+               , pandoc
+               , pandoc-types
+               , containers
+  hs-source-dirs: lib
+  default-language: Haskell2010
+  ghc-options: -Wall
+    
+executable pandoc-project-relative-links
+  main-is: Main.hs
+  -- other-modules:
+  -- other-extensions:
+  build-depends: base
+               , pandoc-project-relative-links
+  hs-source-dirs: src
+  default-language: Haskell2010
+
+test-suite spec
+  type: exitcode-stdio-1.0
+  default-language: Haskell2010
+  hs-source-dirs: test
+  main-is: Spec.hs
+  build-depends: base ==4.*
+               , hspec
+               , pandoc-project-relative-links
+               , pandoc
+               , pandoc-types
+
+source-repository head
+  type: git
+  location: https://github.com/musteresel/pandoc-project-relative-links.git
