@@ -1,5 +1,7 @@
 # pandoc-project-relative-links
 
+[![Build Status](https://travis-ci.org/musteresel/pandoc-project-relative-links.svg?branch=master)](https://travis-ci.org/musteresel/pandoc-project-relative-links)
+
 This is a [pandoc](https://pandoc.org) filter that allows one to use
 absolute links but have them be relative to the root directory of your
 project.  So, a link to `/my/path` is changed to `../../my/path` when
