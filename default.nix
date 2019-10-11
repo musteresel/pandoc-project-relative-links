@@ -7,4 +7,4 @@ let
     then pkgs.haskellPackages
     else pkgs.haskell.packages.${compiler};
 in
-  haskellPackages.callPackage f {}
+  pkgs.haskell.lib.justStaticExecutables (haskellPackages.callPackage f {})
