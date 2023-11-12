@@ -10,3 +10,5 @@ the supplied path to the project root directory is given as `../../`.
 The path to the root directory must be explicitly specified by the
 `pathToProjectRoot` meta variable (specified in the YAML front matter
 or with `-M` on the commandline).
+
+For an example of it's usage see https://github.com/musteresel/pandoc-project-relative-links/issues/1#issuecomment-1807225847
