@@ -1,6 +1,8 @@
+{-# LANGUAGE OverloadedStrings #-}
 import Test.Hspec
 import PandocProjectRelativeLinks
 import Text.Pandoc
+import Data.Text (Text)
 
 main = hspec $ do
   describe "considerAsProjectRelative" $ do
