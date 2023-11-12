@@ -4,7 +4,7 @@ name: pandoc-project-relative-links
 -- PVP summary:      +-+------- breaking API changes
 --                   | | +----- non-breaking API additions
 --                   | | | +--- code changes with no API change
-version:             0.1.0.0
+version:             0.1.0.1
                      
 synopsis: Pandoc filter for project-relative links
 description:
