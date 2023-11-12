@@ -1,5 +1,5 @@
 { mkDerivation, base, containers, hspec, pandoc, pandoc-types
-, stdenv
+, stdenv, lib
 }:
 mkDerivation {
   pname = "pandoc-project-relative-links";
@@ -12,5 +12,5 @@ mkDerivation {
   testHaskellDepends = [ base hspec pandoc pandoc-types ];
   homepage = "https://github.com/musteresel/pandoc-project-relative-links";
   description = "Pandoc filter for project-relative links";
-  license = stdenv.lib.licenses.mit;
+  license = lib.licenses.mit;
 }
