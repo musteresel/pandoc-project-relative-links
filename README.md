@@ -1,6 +1,6 @@
 # pandoc-project-relative-links
 
-[![Build Status](https://travis-ci.org/musteresel/pandoc-project-relative-links.svg?branch=master)](https://travis-ci.org/musteresel/pandoc-project-relative-links)
+[![Haskell CI](https://github.com/musteresel/pandoc-project-relative-links/actions/workflows/haskell.yml/badge.svg)](https://github.com/musteresel/pandoc-project-relative-links/actions/workflows/haskell.yml)
 
 This is a [pandoc](https://pandoc.org) filter that allows one to use
 absolute links but have them be relative to the root directory of your
